@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/reset.css" />
     <title>Caminho - Hélio</title>
   </head>
   <body>
@@ -18,11 +19,24 @@
         Múmia que com uma voz rouca e gentil, pede para que aproximem-se dela.
       </p>
       <p>Escolha um:</p>
-      <button class="button" type="button" onclick="Evento()">
-        Fugir da múmia com medo dela.
-      </button>
-      <button class="button" type="button" onclick="Evento()">
-        Se aproximar para escutá-la.
+
+      <p>1.Fugir da múmia com medo dela.</p>
+      <input
+        type="hidden"
+        id="caminho_1"
+        name="postId"
+        value="./helio_game_over_2.html"
+      />
+
+      <p>2.Se aproximar para escutá-la.</p>
+      <input
+        type="hidden"
+        id="caminho_2"
+        name="postId"
+        value="./helio_win_game.html"
+      />
+      <button id="button" type="button" onclick="redirecionarParaFase()">
+        Escolha um caminho!
       </button>
     </main>
     <footer>
@@ -30,5 +44,6 @@
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>
     </footer>
+    <script src="../javaScript/javaScript.js"></script>
   </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/reset.css" />
     <title>Caminho - Jarom</title>
   </head>
   <body>
@@ -17,17 +18,20 @@
         flores, com muita sede e cantil vazio, apenas com a faca em mãos você
         decide:
       </p>
-      <button class="button" type="button" onclick="Evento()">
-        Ignorar, pois pode ser uma miragem.
-      </button>
-      <button class="button" type="button" onclick="Evento()">
-        Ir até o cacto em busca de se hidratar.
-      </button>
+      
+        <p>1.Ignorar, pois pode ser uma miragem.</p>
+        <input type="hidden" id="caminho_1" name="postId" value="./jarom_game_over_2.html">
+        <p>2.Ir até o cacto em busca de se hidratar.</p>
+        <input type="hidden" id="caminho_2" name="postId" value="./jarom_win_game.html">
+        <button id="button" type="button" onclick="redirecionarParaFase()">
+          Escolha um caminho!
+        </button>
     </main>
     <footer>
       <div class="footer-container">
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>
     </footer>
+    <script src="../javaScript/javaScript.js"></script>
   </body>
 </html>

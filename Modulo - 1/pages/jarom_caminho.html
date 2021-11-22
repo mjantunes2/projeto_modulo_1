@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/reset.css" />
     <title>Caminho - Jarom</title>
   </head>
   <body>
@@ -13,12 +14,12 @@
     <main>
       <p class="main-text">
         Jarom, um grande paquiderme tanto em tamanho quanto em sabedoria, após
-        ter concluído seu retiro espíritual em Resilios, começou a vagar por
-        Ardukati, com o desejo de espalhar todo seu conhecimento e adquirir
+        ter concluído seu retiro espíritual em Resilios, começou a vagar pelo
+        deserto, com o desejo de espalhar todo seu conhecimento e adquirir
         experiência para conseguir uma vaga no Castelo Ubank.
       </p>
       <p class="text">
-        Enquanto você navega pelo deserto das lamentações, você encontra uma
+        Enquanto você navega pelo deserto da programação, você encontra uma
         lâmpada enterrada nas areias, ao esfregar ela um gênio aparece, mas não
         te concede nenhum desejo, e sim te leva por uma jornada para consolidar
         tudo o que foi aprendido até o Oasis Sagrado da Programação.
@@ -27,11 +28,23 @@
         Enquanto caminha pelo árido deserto, você avista uma caravana vagando no
         horizonte. Escolha um:
       </p>
-      <button class="button" type="button" onclick="Evento()">
-        Ir até a caravana em busca de ajuda
-      </button>
-      <button class="button" type="button" onclick="Evento()">
-        Continuar andando pelo caminho indicado pelo gênio
+
+      <p>1.Ir até a caravana em busca de ajuda</p>
+      <input
+        type="hidden"
+        id="caminho_1"
+        name="postId"
+        value="./jarom_game_over.html"
+      />
+      <p>2.Continuar andando pelo caminho indicado pelo gênio</p>
+      <input
+        type="hidden"
+        id="caminho_2"
+        name="postId"
+        value="./jarom_caminho_certo_1.html"
+      />
+      <button id="button" type="button" onclick="redirecionarParaFase()">
+        Escolha um caminho!
       </button>
     </main>
     <footer>
@@ -39,5 +52,6 @@
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>
     </footer>
+    <script src="../javaScript/javaScript.js"></script>
   </body>
 </html>

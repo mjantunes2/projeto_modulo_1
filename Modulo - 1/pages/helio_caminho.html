@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/reset.css" />
     <title>Caminho - Hélio</title>
   </head>
   <body>
     <header>
-      <h1 class="main-title">Pirâmide do Faraó Escripto</h1>
+      <h1 class="main-title">Pirâmide do Faraó Javon Escripto</h1>
     </header>
     <main>
       <h2 class="text">Hélio, o arqueólogo</h2>
@@ -27,11 +28,24 @@
         Programadores, que concede ao seu portador conhecimento sobre
         JavaScript. Escolha um:
       </p>
-      <button class="button" type="button" onclick="Evento()">
-        Voltar e chamar reforços para a expedição.
-      </button>
-      <button class="button" type="button" onclick="Evento()">
-        Seguir em frente confiando na sua equipe.
+
+      <p>1.Voltar e chamar reforços para a expedição.</p>
+      <input
+        type="hidden"
+        id="caminho_1"
+        name="postId"
+        value="./helio_game_over.html"
+      />
+
+      <p>2.Seguir em frente confiando na sua equipe.</p>
+      <input
+        type="hidden"
+        id="caminho_2"
+        name="postId"
+        value="./helio_caminho_certo_1.html"
+      />
+      <button id="button" type="button" onclick="redirecionarParaFase()">
+        Escolha um caminho!
       </button>
     </main>
     <footer>
@@ -39,5 +53,6 @@
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>
     </footer>
+    <script src="../javaScript/javaScript.js"></script>
   </body>
 </html>

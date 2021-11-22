@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/reset.css" />
     <title>Caminho - Hélio</title>
   </head>
   <body>
@@ -21,11 +22,24 @@
       <p class="text">Em cima da porta da esquerda(2) você vê:</p>
       <p class="text">(function (doom){var ="doom";return false});</p>
       <p class="text">Escolha uma porta:</p>
-      <button class="button" type="button" onclick="Evento()">
-        Escolher porta 1, direita.
-      </button>
-      <button class="button" type="button" onclick="Evento()">
-        Escolher porta 2, esquerda.
+      
+        <p>1.Escolher porta 1, direita.</p>
+        <input
+        type="hidden"
+        id="caminho_1"
+        name="postId"
+        value="./helio_caminho_certo_2.html"
+      />
+      
+        <p>2.Escolher porta 2, esquerda.</p>
+        <input
+        type="hidden"
+        id="caminho_2"
+        name="postId"
+        value="./helio_game_over_1.html"
+      />
+      <button id="button" type="button" onclick="redirecionarParaFase()">
+        Escolha um caminho!
       </button>
     </main>
     <footer>
@@ -33,5 +47,6 @@
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>
     </footer>
+    <script src="../javaScript/javaScript.js"></script>
   </body>
 </html>

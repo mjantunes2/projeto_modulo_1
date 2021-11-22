@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style/reset.css" />
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/style_home.css" />
     <title>Resilia - Projeto 1</title>
   </head>
   <body>
@@ -17,9 +17,13 @@
     </header>
     <main>
       <p class="text">
-        Bem vindos as Areias da Programação, escolha com sabedoria a seguir, um
-        desses 3 protagonistas de suas respectivas histórias, mas cuidado
-        existem desafios a serem superados durante sua jornada.
+        Bem vindo aventureiro! Escolha a seguir qual personagem você quer
+        interpretar durante a sua jornada pelo Deserto da Programação, cada um
+        desses 3 personagens possui uma história com desafios adversos para
+        exercitar sua mente de uma forma divertida, sobre programação e escolhas
+        a serem tomadas para chegar até o Oasis Sagrado da Programação, ou
+        encontrar um dos lendários artefatos do DeskTop. Então aventureiro, está
+        pronto para enfrentar esses desafios? Escolha seu personagem :
       </p>
       <div>
         <nav class="button-container">
@@ -29,31 +33,28 @@
               src="images/elefante_da_sabedoria.jpg"
               alt="Um Monge Elefante"
             />
-            <button class="button" type="button" onclick="Evento()">
-              Jarom, o Sábio
-            </button>
+            Jarom, o Sábio
           </div>
           <div class="character-image">
             <img
               class="image"
               src="images/helio_o_arqueologo.jpg"
-              alt="Um Leopardo Árabe"
+              alt="Um Arqueólogo"
             />
-            <button class="button" type="button" onclick="Evento()">
-              Hélio, o Arqueólogo
-            </button>
+            Hélio, o Arqueólogo
           </div>
           <div class="character-image">
             <img
               class="image"
               src="images/elias_o_principe.jpg"
-              alt="Um Príncipe com escudo e espada"
+              alt="Um soldado com escudo e espada"
             />
-            <button class="button" type="button" onclick="Evento()">
-              Príncipe Elias
-            </button>
+            Esli, o Guerreiro
           </div>
         </nav>
+        <button id="button" type="button" onclick="Evento()">
+          Escolha seu personagem!
+        </button>
       </div>
     </main>
     <footer class="footer">
@@ -61,5 +62,6 @@
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>
     </footer>
+    <script src="./javaScript/javaScript_home.js"></script>
   </body>
 </html>

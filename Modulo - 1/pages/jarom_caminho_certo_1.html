@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/reset.css" />
     <title>Caminho - Jarom</title>
   </head>
   <body>
@@ -23,11 +24,13 @@
         caminha, você percebe de relance um belo oásis com águas cristalinas.
         Escolha um:
       </p>
-      <button class="button" type="button" onclick="Evento()">
-        Correr até o oásis para se refrescar
-      </button>
-      <button class="button" type="button" onclick="Evento()">
-        Você segue o caminho reto, mas com sede
+
+      <p>1.Correr até o oásis para se refrescar</p>
+      <input type="hidden" id="caminho_1" name="postId" value="./jarom_game_over_1.html">
+      <p>2.Você segue o caminho reto, mas com sede</p>
+      <input type="hidden" id="caminho_2" name="postId" value="./jarom_caminho_certo_2.html">
+      <button id="button" type="button" onclick="redirecionarParaFase()">
+        Escolha um caminho!
       </button>
     </main>
     <footer>
@@ -35,5 +38,6 @@
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>
     </footer>
+    <script src="../javaScript/javaScript.js"></script>
   </body>
 </html>
