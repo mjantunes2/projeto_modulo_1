@@ -1,10 +1,13 @@
 function redirecionarParaFase() {
   var caminho_1 = document.getElementById("caminho_1").value;
   var caminho_2 = document.getElementById("caminho_2").value;
-
-  var numEscolha = parseInt(prompt(`Escolha a opção 1 ou 2:`));
+  var numEscolha;
 
   while (numEscolha != 1 || numEscolha != 2) {
+    numEscolha = parseInt(prompt(`Escolha a opção 1 ou 2:`));
+    if (numEscolha === null) {
+      return;
+    }
     if (numEscolha == 1) {
       window.location.assign(caminho_1);
       break;
@@ -13,10 +16,6 @@ function redirecionarParaFase() {
       break;
     } else {
       alert("Escolha um caminho válido!");
-      numEscolha = parseInt(prompt(`Escolha a opção 1 ou 2:`));
-      if(input === null) {
-        return
-      }
-    } 
+    }
   }
 }
