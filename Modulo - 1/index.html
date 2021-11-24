@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/style_home.css" />
     <title>Resilia - Projeto 1</title>
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <div class="title-container">
         <h1 class="main-title">
@@ -15,25 +15,26 @@
         </h1>
       </div>
     </header>
-    <main>
-      <p class="text">
-        Bem vindo aventureiro! Escolha a seguir qual personagem você quer
-        interpretar durante a sua jornada pelo Deserto da Programação, cada um
-        desses 3 personagens possui uma história com desafios adversos para
-        exercitar sua mente de uma forma divertida, sobre programação e escolhas
-        a serem tomadas para chegar até o Oasis Sagrado da Programação, ou
-        encontrar um dos lendários artefatos do DeskTop. Então aventureiro, está
-        pronto para enfrentar esses desafios? Escolha seu personagem :
-      </p>
-      <div>
-        <nav class="button-container">
+    <main class="main">
+      <div class="main-content">
+          <div class="text">
+            <p class="sub-text">Bem vindo aventureiro! Escolha a seguir qual personagem você quer
+            interpretar durante a sua jornada pelo Deserto da Programação.</p>
+            <p class="sub-text">Cada um desses 3 personagens possui uma história com desafios adversos
+            para exercitar sua mente de uma forma divertida, sobre programação e
+            escolhas a serem tomadas para chegar até o Oasis Sagrado da
+            Programação, ou encontrar um dos lendários artefatos do DeskTop.</p>
+            <p class="sub-text">Então, aventureiro, está pronto para enfrentar esses desafios?
+            Escolha seu personagem :</p>
+          </div>
+        <div class="character">
           <div class="character-image">
             <img
               class="image"
               src="images/elefante_da_sabedoria.jpg"
               alt="Um Monge Elefante"
             />
-            Jarom, o Sábio
+            <p class="character-name">Jarom, o Sábio!</p>
           </div>
           <div class="character-image">
             <img
@@ -41,7 +42,7 @@
               src="images/helio_o_arqueologo.jpg"
               alt="Um Arqueólogo"
             />
-            Hélio, o Arqueólogo
+            <p class="character-name">Hélio, o Explorador!</p>
           </div>
           <div class="character-image">
             <img
@@ -49,12 +50,14 @@
               src="images/elias_o_principe.jpg"
               alt="Um soldado com escudo e espada"
             />
-            Esli, o Guerreiro
+            <p class="character-name">Esli, o Guerreiro!</p>
           </div>
-        </nav>
-        <button id="button" type="button" onclick="Evento()">
-          Escolha seu personagem!
-        </button>
+        </div>
+        <div class="button-container">
+          <button class="select-button" id="button" type="button" onclick="Evento()">
+            Escolha seu Personagem!
+          </button>
+        </div>
       </div>
     </main>
     <footer class="footer">

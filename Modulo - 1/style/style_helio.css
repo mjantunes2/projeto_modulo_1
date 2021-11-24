@@ -4,7 +4,9 @@ html {
 
 .body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #B58531; 
+    /*background-color: #B58531; */
+    background: #B58531 url(../images/piramide_fundo.jpg) bottom no-repeat;
+    /*-webkit-text-stroke: 0.5px gray;*/
     height: 100%;
 }
 
@@ -31,60 +33,46 @@ html {
 }
 
 .main {
+    height: 80%;
     width: 100%;
-    height: 80%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px;
+    color: white;
 }
 
-.main-content {
-    height: 50%;
+.main-text {
+    font-weight: bold;
 }
 
 .text {
-    margin: 0 15px;
+    font-size: 25px;
+    margin: 15px;
     text-align: justify;
 }
 
-.sub-text {
-    font-size: 20px;
-    padding-bottom: 10px;
-    font-weight: bold;
-    color: white;
-}
+.choices-container {
+    /*Size*/
+    width: 40%;
 
-.character {
-    padding: 15px 15px;
+    /*Display and disposition*/
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-}
+    text-align: center;
+    flex-direction: column;
 
-.character-image {
-    border: 3px solid black;
+    /*Extra size*/
+    margin: 20px auto 0 auto;
+    padding: 15px 0;
+
+    /*Border*/
+    border: 2px solid white;
     border-radius: 5px;
 }
 
-.image {
-    min-height: 200px;
-    min-width: 200px;
-    max-height: 300px;
-    max-width: 300px;
-}
-
-.character-name {
+.choice {
+    font-size: 18px;
     color: white;
-    text-align: center;
     font-weight: bold;
-}
-
-.button-container {
-    height: 25px;
-    width: 10%;
-    padding: 10px 0px;
-    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 .select-button {
@@ -99,6 +87,12 @@ html {
     font-weight: bolder;
     background-color: darkorange;
     cursor: pointer;
+}
+
+.image {
+    height: 60%;
+    width: 18%;
+    margin: 0 41% 1%;
 }
 
 .footer-container {

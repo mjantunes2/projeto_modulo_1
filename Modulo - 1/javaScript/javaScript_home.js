@@ -16,20 +16,20 @@ function selecionarPersonagem(event) {
   event.preventDefault();
   var escolha = parseInt(
     prompt(`Escolha seu personagem:
-  1 - Jarom, o Sabio
-  2 - Hélio, o Arqueólogo
+  1 - Jarom, o Sábio
+  2 - Hélio, o Explorador
   3 - Esli, o Guerreiro
   Obs: Escolha baseado no número do personagem!`)
   );
 
   if (escolha == 1) {
-    alert("Você escolheu Jarom!");
+    alert("Você escolheu Jarom, o Sábio!");
     redirecionarParaFase(escolha);
   } else if (escolha == 2) {
-    alert("Você escolheu Hélio");
+    alert("Você escolheu Hélio, o Explorador!");
     redirecionarParaFase(escolha);
   } else if (escolha == 3) {
-    alert("Você escolheu o Esli");
+    alert("Você escolheu o Esli, o Guerreiro!");
     redirecionarParaFase(escolha);
   } else {
     alert("Escolha um personagem válido!");

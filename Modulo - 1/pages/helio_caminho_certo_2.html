@@ -5,41 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style_helio.css" />
     <title>Caminho - Hélio</title>
   </head>
-  <body>
-    <header>
-      <h1 class="main-title">A Múmia do FeedBack</h1>
+  <body class="body">
+    <header class="header">
+      <h1 class="main-title">A Múmia do FeedBack!</h1>
     </header>
-    <main>
+    <main class="main">
       <p class="text">
         Vocês passam pela porta certa, e encontram um lance de escadas caracol,
         seguindo para baixo, após descer a escadaria por cerca de 25 minutos,
         vocês encontram encostada em frente a uma grande porta dourada, uma
-        Múmia que com uma voz rouca e gentil, pede para que aproximem-se dela.
+        Múmia que com uma voz rouca e gentil, ela pede para que aproximem-se
+        dela.
       </p>
-      <p>Escolha um:</p>
+      <p class="text">Escolha um:</p>
+      <div class="choices-container">
+        <p class="choice">1.Fugir da múmia com medo dela.</p>
+        <input
+          type="hidden"
+          id="caminho_1"
+          name="postId"
+          value="./helio_game_over_2.html"
+        />
 
-      <p>1.Fugir da múmia com medo dela.</p>
-      <input
-        type="hidden"
-        id="caminho_1"
-        name="postId"
-        value="./helio_game_over_2.html"
-      />
-
-      <p>2.Se aproximar para escutá-la.</p>
-      <input
-        type="hidden"
-        id="caminho_2"
-        name="postId"
-        value="./helio_win_game.html"
-      />
-      <button id="button" type="button" onclick="redirecionarParaFase()">
-        Escolha um caminho!
-      </button>
+        <p class="choice">2.Se aproximar para escutá-la.</p>
+        <input
+          type="hidden"
+          id="caminho_2"
+          name="postId"
+          value="./helio_win_game.html"
+        />
+        <button
+          class="select-button"
+          id="button"
+          type="button"
+          onclick="redirecionarParaFase()"
+        >
+          Escolha um caminho!
+        </button>
+      </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>

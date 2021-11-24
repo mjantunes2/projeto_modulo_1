@@ -8,10 +8,10 @@
     <title>Caminho - Esli</title>
   </head>
   <body>
-    <header>
-      <h1 class="main-title">As visões errônea</h1>
+    <header class="header">
+      <h1 class="main-title">Pergunta Final!</h1>
     </header>
-    <main>
+    <main class="main">
       <p class="text">
         A esfinge se assusta, mas te parabeniza pela resposta correta, e começa
         a desenhar na areia a próxima pergunta:
@@ -20,18 +20,31 @@
         A muito tempo existia uma linguagem antiga chamada JavaScript, sabendo
         disso responda: o que “1” + 2 + 4 retorna? E 5 + 4 + “3”?
       </p>
-      <button class="button" type="button" onclick="Evento()">
-        124 e 93.
-      </button>
-      <button class="button" type="button" onclick="Evento()">
-        7 e 12.
-      </button>
+      
+        <p class="choice">1. 124 e 93.</p>
+        <input
+        type="hidden"
+        id="caminho_1"
+        name="postId"
+        value="./esli_win_game.html"
+      />
+      
+        <p class="choice">2. 7 e 12.</p>
+        <input
+        type="hidden"
+        id="caminho_2"
+        name="postId"
+        value="./esli_game_over_2.html"
+      />
+        <button id="button" type="button" onclick="redirecionarParaFase()">
+          Escolha um caminho!
+        </button>
     </main>
     <footer>
       <div class="footer-container">
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>
     </footer>
-    <script></script>
+    <script src="../javaScript/javaScript.js"></script>
   </body>
 </html>

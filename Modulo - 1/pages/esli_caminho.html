@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style_esli.css">
     <title>Caminho - Esli</title>
   </head>
-  <body>
-    <header>
-      <h1 class="main-title">Enfrentando o GitBug</h1>
+  <body class="body">
+    <header class="header">
+      <h1 class="main-title">Enfrentando o GitBug!</h1>
     </header>
-    <main>
-      <p class="main-text">
+    <main class="main">
+      <p class="main-text text">
         Um grande guerreiro treinado nos campos de Resilios, tendo a mente e o
         corpo treinados para qualquer desafio que lhe for proposto. Contratado
         pelo Rei Tóh'Mas I, para encontrar um item que falta para completar o
@@ -30,30 +31,31 @@
       <p class="text">
         Primeira pergunta: HTML é uma linguagem de programação?
       </p>
-     
-        <p>1.Sim</p>
+        <div class="choices-container">
+        <p class="choice">1.Sim</p>
         <input
         type="hidden"
         id="caminho_1"
         name="postId"
         value="./esli_game_over.html"
       />
-        <p>2.Não</p>
+        <p class="choice">2.Não</p>
         <input
         type="hidden"
         id="caminho_2"
         name="postId"
         value="./esli_caminho_certo_1.html"
       />
-        <button id="button" type="button" onclick="redirecionarParaFase()">
+        <button class="select-button" id="button" type="button" onclick="redirecionarParaFase()">
           Escolha um caminho!
         </button>
+        </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>
     </footer>
-    <script></script>
+    <script src="../javaScript/javaScript.js"></script>
   </body>
 </html>

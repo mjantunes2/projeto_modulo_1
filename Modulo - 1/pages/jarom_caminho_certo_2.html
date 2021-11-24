@@ -5,29 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style_jarom.css" />
     <title>Caminho - Jarom</title>
   </head>
-  <body>
-    <header>
+  <body class="body">
+    <header class="header">
       <h1 class="main-title">Decisões difíceis, bons resultados</h1>
     </header>
-    <main>
+    <main class="main">
       <p class="text">
         Após caminhar por horas afins, seu cantil não possui mas nenhuma gota de
         água, em seu campo de visão surge um cacto brilhando, com uma coroa de
         flores, com muita sede e cantil vazio, apenas com a faca em mãos você
         decide:
       </p>
-      
-        <p>1.Ignorar, pois pode ser uma miragem.</p>
-        <input type="hidden" id="caminho_1" name="postId" value="./jarom_game_over_2.html">
-        <p>2.Ir até o cacto em busca de se hidratar.</p>
-        <input type="hidden" id="caminho_2" name="postId" value="./jarom_win_game.html">
-        <button id="button" type="button" onclick="redirecionarParaFase()">
+      <div class="choices-container">
+        <p class="choice">1.Ignorar, pois pode ser uma miragem.</p>
+        <input
+          type="hidden"
+          id="caminho_1"
+          name="postId"
+          value="./jarom_game_over_2.html"
+        />
+        <p class="choice">2.Ir até o cacto em busca de se hidratar.</p>
+        <input
+          type="hidden"
+          id="caminho_2"
+          name="postId"
+          value="./jarom_win_game.html"
+        />
+        <button
+          class="select-button"
+          id="button"
+          type="button"
+          onclick="redirecionarParaFase()"
+        >
           Escolha um caminho!
         </button>
+      </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>

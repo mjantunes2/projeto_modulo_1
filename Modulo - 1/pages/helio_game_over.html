@@ -5,23 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style_helio.css">
     <title>Game-Over</title>
   </head>
-  <body>
-    <header>
-      <h1 class="main-title">Tempestade de Areia</h1>
+  <body class="body">
+    <header class="header">
+      <h1 class="main-title">Tempestade de Areia!</h1>
     </header>
-    <main>
+    <main class="main">
       <p class="text">
         Não confiante de suas habilidades, você e sua equipe deixam a pirâmide
         em busca de chamar mais reforços, porém ao fazer isso uma grande
         tempestade de areia surge, fazendo com que a pirâmide desapareça para
-        sempre nas areais do deserto
+        sempre nas areais do deserto.
       </p>
-      <button class="button" type="button" onclick="Evento()">Recomeçar</button>
-      <button class="button" type="button" onclick="Evento()">Sair</button>
+      <form>
+        <div class="choices-container">
+          <a href="../index.html">
+            <input class="select-button" type="button" value="Recomeçar" />
+          </a>
+        </div>
+      </form>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>

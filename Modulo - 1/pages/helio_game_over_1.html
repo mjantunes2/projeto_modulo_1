@@ -5,23 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style_helio.css">
     <title>Game-Over</title>
   </head>
-  <body>
-    <header>
+  <body class="body">
+    <header class="header">
       <h1 class="main-title">Porta errada!</h1>
     </header>
-    <main>
+    <main class="main">
       <p class="text">
         Acreditando que a porta da esquerda seria a correta, vocês passam por
         ela, mas ao andar alguns passos a frente o chão sobre seus pés
         desaparece e vocês caiem em uma armadilha que leva vocês para fora da
-        pirâmide, e ela desaparece
+        pirâmide, e ela desaparece.
       </p>
-      <button class="button" type="button" onclick="Evento()">Recomeçar</button>
-      <button class="button" type="button" onclick="Evento()">Sair</button>
+      <form>
+        <div class="choices-container">
+        <a href="../index.html">
+          <input class="select-button" type="button" value="Recomeçar" />
+        </a>
+        </div>
+      </form>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>

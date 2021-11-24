@@ -5,44 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style_helio.css">
     <title>Caminho - Hélio</title>
   </head>
-  <body>
-    <header>
-      <h1 class="main-title">Quais das Portas?</h1>
+  <body class="body">
+    <header class="header">
+      <h1 class="main-title">Qual Porta?</h1>
     </header>
-    <main>
+    <main class="main">
       <p class="text">
         Após adentrar a pirâmide, vocês se deparam com uma câmara iluminada por
         algumas tochas nas paredes, que revelam 2 grandes portas revestida com
         calcário, acima delas você percebe alguma escrita antiga, em cima da
         porta da direita(1) está escrito:
       </p>
-      <p class="text">function(door){door=true;return door};</p>
+      <p class="text">function (door) {door=true;return door};</p>
       <p class="text">Em cima da porta da esquerda(2) você vê:</p>
-      <p class="text">(function (doom){var ="doom";return false});</p>
+      <p class="text">(function (doom) {var ="doom";return windows});</p>
       <p class="text">Escolha uma porta:</p>
-      
-        <p>1.Escolher porta 1, direita.</p>
+      <div class="choices-container">
+        <p class="choice">1.Escolher porta 1, direita.</p>
         <input
-        type="hidden"
-        id="caminho_1"
-        name="postId"
-        value="./helio_caminho_certo_2.html"
-      />
-      
-        <p>2.Escolher porta 2, esquerda.</p>
+          type="hidden"
+          id="caminho_1"
+          name="postId"
+          value="./helio_caminho_certo_2.html"
+        />
+
+        <p class="choice">2.Escolher porta 2, esquerda.</p>
         <input
-        type="hidden"
-        id="caminho_2"
-        name="postId"
-        value="./helio_game_over_1.html"
-      />
-      <button id="button" type="button" onclick="redirecionarParaFase()">
-        Escolha um caminho!
-      </button>
+          type="hidden"
+          id="caminho_2"
+          name="postId"
+          value="./helio_game_over_1.html"
+        />
+        <button class="select-button" id="button" type="button" onclick="redirecionarParaFase()">
+          Escolha um caminho!
+        </button>
+      </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>

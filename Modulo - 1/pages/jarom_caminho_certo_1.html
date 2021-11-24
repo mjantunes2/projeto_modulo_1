@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style_jarom.css" />
     <title>Caminho - Jarom</title>
   </head>
-  <body>
-    <header>
-      <h1 class="main-title">As visões errônea</h1>
+  <body class="body">
+    <header class="header">
+      <h1 class="main-title">As Visões Errôneas!</h1>
     </header>
-    <main>
+    <main class="main">
       <p class="text">
         Enquanto caminha pelo deserto, extremamente exausto com areia em todas
         as partes do corpo, e com a temperatura abaixando drasticamente você
@@ -25,15 +26,32 @@
         Escolha um:
       </p>
 
-      <p>1.Correr até o oásis para se refrescar</p>
-      <input type="hidden" id="caminho_1" name="postId" value="./jarom_game_over_1.html">
-      <p>2.Você segue o caminho reto, mas com sede</p>
-      <input type="hidden" id="caminho_2" name="postId" value="./jarom_caminho_certo_2.html">
-      <button id="button" type="button" onclick="redirecionarParaFase()">
-        Escolha um caminho!
-      </button>
+      <div class="choices-container">
+        <p class="choice">1.Correr até o oásis para se refrescar</p>
+        <input
+          type="hidden"
+          id="caminho_1"
+          name="postId"
+          value="./jarom_game_over_1.html"
+        />
+        <p class="choice">2.Você segue o caminho reto, mas com sede</p>
+        <input
+          type="hidden"
+          id="caminho_2"
+          name="postId"
+          value="./jarom_caminho_certo_2.html"
+        />
+        <button
+          class="select-button"
+          id="button"
+          type="button"
+          onclick="redirecionarParaFase()"
+        >
+          Escolha um caminho!
+        </button>
+      </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>

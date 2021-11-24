@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style_helio.css">
     <title>Game-Over</title>
   </head>
-  <body>
-    <header>
+  <body class="body">
+    <header class="header">
       <h1 class="main-title">Não escutou o Feedback!</h1>
     </header>
-    <main>
+    <main class="main">
       <p class="text">
         Vocês correm com medo da múmia, voltando todo o caminho percorrido até
         agora, ao passar pela grande entrada da pirâmide, a mesma se afunda na
         areia desaparecendo para sempre.
       </p>
-      <button class="button" type="button" onclick="Evento()">Recomeçar</button>
-      <button class="button" type="button" onclick="Evento()">Sair</button>
+      <form>
+        <div class="choices-container">
+        <a href="../index.html">
+          <input class="select-button" type="button" value="Recomeçar" />
+        </a>
+        </div>
+      </form>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>
