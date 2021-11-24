@@ -4,9 +4,8 @@ html {
 
 .body {
     font-family: Arial, Helvetica, sans-serif;
-    /*background-color: #B58531; */
     background: #B58531 url(../images/teclado_supremo.png) bottom no-repeat;
-    /*-webkit-text-stroke: 0.5px gray;*/
+    background-size: 42% 80%;
     height: 100%;
 }
 

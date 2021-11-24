@@ -4,9 +4,8 @@ html {
 
 .body {
     font-family: Arial, Helvetica, sans-serif;
-    /*background-color: #B58531; */
     background: #B58531 url(../images/oasis_da_programação.jpg) bottom no-repeat;
-    /*-webkit-text-stroke: 0.5px gray;*/
+    background
     height: 100%;
 }
 

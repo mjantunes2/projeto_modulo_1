@@ -24,9 +24,6 @@ function selecionarPersonagem(event) {
     3 - Esli, o Guerreiro
     Obs: Escolha baseado no número do personagem!`)
     );
-    if (escolha === null) {
-      return;
-    }
     if (escolha == 1) {
       alert("Você escolheu Jarom, o Sábio!");
       redirecionarParaFase(escolha);
@@ -38,6 +35,14 @@ function selecionarPersonagem(event) {
     } else if (escolha == 3) {
       alert("Você escolheu o Esli, o Guerreiro!");
       redirecionarParaFase(escolha);
+      break;
+    } else if (
+      escolha == "null" ||
+      escolha == null ||
+      escolha == "" ||
+      escolha == false ||
+      isNaN(escolha)
+    ) {
       break;
     } else {
       alert("Escolha um personagem válido!");
