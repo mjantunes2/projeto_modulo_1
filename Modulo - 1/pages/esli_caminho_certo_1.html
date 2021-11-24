@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style_esli.css" />
     <title>Caminho - Esli</title>
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <h1 class="main-title">Cascata de que?</h1>
     </header>
@@ -20,27 +21,28 @@
         Responda com verdadeiro ou falso, CSS significa Folha de Estilo em
         Cascata e é utilizado para definir a aparência em pergaminhos?
       </p>
-      
+      <div class="choices-container">
         <p class="choice">1.Verdadeiro</p>
         <input
-        type="hidden"
-        id="caminho_1"
-        name="postId"
-        value="./esli_caminho_certo_2.html"
-      />
-      
+          type="hidden"
+          id="caminho_1"
+          name="postId"
+          value="./esli_caminho_certo_2.html"
+        />
+
         <p class="choice">2.Falso</p>
         <input
-        type="hidden"
-        id="caminho_2"
-        name="postId"
-        value="./esli_game_over_1.html"
-      />
-        <button id="button" type="button" onclick="redirecionarParaFase()">
+          type="hidden"
+          id="caminho_2"
+          name="postId"
+          value="./esli_game_over_1.html"
+        />
+        <button class="select-button" id="button" type="button" onclick="redirecionarParaFase()">
           Escolha um caminho!
         </button>
+      </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>

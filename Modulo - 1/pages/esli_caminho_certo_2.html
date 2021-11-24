@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style_esli.css">
     <title>Caminho - Esli</title>
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <h1 class="main-title">Pergunta Final!</h1>
     </header>
@@ -20,27 +21,28 @@
         A muito tempo existia uma linguagem antiga chamada JavaScript, sabendo
         disso responda: o que “1” + 2 + 4 retorna? E 5 + 4 + “3”?
       </p>
-      
+      <div class="choices-container">
         <p class="choice">1. 124 e 93.</p>
         <input
-        type="hidden"
-        id="caminho_1"
-        name="postId"
-        value="./esli_win_game.html"
-      />
-      
+          type="hidden"
+          id="caminho_1"
+          name="postId"
+          value="./esli_win_game.html"
+        />
+
         <p class="choice">2. 7 e 12.</p>
         <input
-        type="hidden"
-        id="caminho_2"
-        name="postId"
-        value="./esli_game_over_2.html"
-      />
-        <button id="button" type="button" onclick="redirecionarParaFase()">
+          type="hidden"
+          id="caminho_2"
+          name="postId"
+          value="./esli_game_over_2.html"
+        />
+        <button class="select-button" id="button" type="button" onclick="redirecionarParaFase()">
           Escolha um caminho!
         </button>
+      </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <p class="footer-text">&copy; Resilia - Todos os direitos reservados</p>
       </div>
