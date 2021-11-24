@@ -4,12 +4,17 @@ function redirecionarParaFase() {
 
   var numEscolha = parseInt(prompt(`Escolha a opção 1 ou 2:`));
 
-  if (numEscolha == 1) {
-    window.location.assign(caminho_1);
-  } else if(numEscolha == 2) {
-    window.location.assign(caminho_2);
-  } else {
-    alert("Escolha um caminho válido!");
+  while (numEscolha != 1 || numEscolha != 2) {
+    if (numEscolha == 1) {
+      window.location.assign(caminho_1);
+    } else if (numEscolha == 2) {
+      window.location.assign(caminho_2);
+    } else {
+      alert("Escolha um caminho válido!");
+      numEscolha = parseInt(prompt(`Escolha a opção 1 ou 2:`));
+      if(input === null) {
+        return
+      }
+    } 
   }
 }
-
