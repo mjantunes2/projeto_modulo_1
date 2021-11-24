@@ -5,7 +5,7 @@ html {
 .body {
     font-family: Arial, Helvetica, sans-serif;
     background: #B58531 url(../images/monitor_de_bug.png) bottom no-repeat;
-    background-size: 41% 83%;
+    background-size: 40% 82%;
     height: 100%;
 }
 
@@ -116,4 +116,14 @@ html {
     margin: auto 0;
     color: white;
     font-weight: bold;
+}
+
+/*parte mobile*/
+@media (max-width: 768px) {
+    .body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #B58531 url(../images/monitor_de_bug.png) bottom no-repeat;
+        background-size: 100% 79%;
+        height: 100%;
+    }
 }

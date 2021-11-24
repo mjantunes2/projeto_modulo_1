@@ -5,7 +5,7 @@ html {
 .body {
     font-family: Arial, Helvetica, sans-serif;
     background: #B58531 url(../images/oasis_da_programação.jpg) bottom no-repeat;
-    background
+    background-size: 75% 75%;
     height: 100%;
 }
 
@@ -116,4 +116,14 @@ html {
     margin: auto 0;
     color: white;
     font-weight: bold;
+}
+
+/* parte mobile*/
+@media (max-width: 768px) {
+    .body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #B58531 url(../images/oasis_da_programação.jpg) bottom no-repeat;
+        background-size: 100% 73%;
+        height: 100%;
+    }
 }

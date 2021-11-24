@@ -125,3 +125,24 @@ html {
     color: white;
     font-weight: bold;
 }
+
+/* parte mobile*/
+@media (max-width: 768px){
+    .character {
+        flex-direction: column;
+    }
+
+    .character-image {
+        margin-bottom: 5px;
+    }
+
+    .button-container {
+        padding: 0 0 15%;
+        margin: 0 42%;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}

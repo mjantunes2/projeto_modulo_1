@@ -1,7 +1,3 @@
-var button = document.querySelector("#button");
-
-button.addEventListener("click", selecionarPersonagem);
-
 function redirecionarParaFase(numEscolha) {
   if (numEscolha == 1) {
     window.location.assign("./pages/jarom_caminho.html");
@@ -12,8 +8,7 @@ function redirecionarParaFase(numEscolha) {
   }
 }
 
-function selecionarPersonagem(event) {
-  event.preventDefault();
+function selecionarPersonagem() {
   var escolha;
 
   while (escolha != 1 || escolha != 2 || escolha != 3) {

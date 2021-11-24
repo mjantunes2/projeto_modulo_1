@@ -5,7 +5,7 @@ html {
 .body {
     font-family: Arial, Helvetica, sans-serif;
     background: #B58531 url(../images/teclado_supremo.png) bottom no-repeat;
-    background-size: 42% 80%;
+    background-size: 40% 79.5%;
     height: 100%;
 }
 
@@ -116,4 +116,14 @@ html {
     margin: auto 0;
     color: white;
     font-weight: bold;
+}
+
+/* parte mobile*/
+@media (max-width: 768px) {
+    .body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #B58531 url(../images/teclado_supremo.png) bottom no-repeat;
+        background-size: 100% 74%;
+        height: 100%;
+    }
 }
